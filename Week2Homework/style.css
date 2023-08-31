@@ -1,0 +1,74 @@
+/* Stylesheet for Homework */
+
+body {
+    margin: 0;
+    background-color: pink;
+}
+
+header img {
+    height: 100px;
+    width: 100px;
+}
+
+header {
+    text-align: center;
+    background-color: beige;
+}
+
+header h1 {
+    display: inline;
+    font-family: sans-serif;
+    padding-top: 25px;
+}
+
+.backToSchool {
+    width: 80%;
+    margin-left: 15px;
+}
+
+.Events {
+    text-align: center;
+    border: brown 2px solid;
+    background-color:coral;
+}
+
+dt {
+    font-weight: bold;
+}
+
+#searchCourse {
+    text-align: center;
+}
+
+footer {
+    background-color: black;
+    color: brown;
+}
+
+footer div {
+    width: 45%;
+    float: left;
+    margin-left: 60px;
+}
+
+footer::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:visited {
+    color: green;
+}
+
+footer a:hover {
+    color: blue;
+}
+
+#aboutCubic {
+    color: coral;
+}

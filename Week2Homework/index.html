@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week Two Homework</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="script.js"> </script>
+
+</head>
+<body>
+    <header>
+        <img src="cubeLogo.jpg" alt = "Cubic Logo" />
+        <h1>Welcome to Cubic Community College!</h1>
+    </header>
+    <div class="backToSchool">
+        <h2>Welcome Student Back to School!</h2>
+        <p>
+            Class is in session for the year 2023! We have many great adventures and events planned for our students this year! We hope everyone is ready with your books and bags for a fun filled year.
+        </p>
+        <p>
+            For our first week we have many fun activities planned! Please see below for more information:
+        </p>
+    </div>
+    <div class="Events">
+        <h3>Events for the week of Sept. 4th - Sept 8th</h3>
+        
+    <dl>
+        <dt>Monday Sept. 4th</dt>
+        <dd>Crazy hair day!</dd>
+        <dt>Tuesday Sept. 5th</dt>
+        <dd>Favorite Jersey Day!</dd>
+        <dt>Wednesday Sept. 6th</dt>
+        <dd>Wear your favorite color to school day</dd>
+        <dt>Thursday Sept 7th</dt>
+        <dd>Free lemonade during lunch</dd>
+        <dt>Friday Sept. 8th</dt>
+        <dd>Assembly at 2:15pm to celebrate the first week!</dd>
+    </dl>
+    </div>
+    <div id="searchCourse">
+        <h4>Search for your course</h4>
+        <label for="courseName">Course: </label>
+        <input type="Text" id="courseName" placeholder="Enter Course Number" maxlength="5">
+        <!--Will ask user to submit a course name-->
+        <input type="button" value="Search" id="searchButton" />
+        <!--This will add a button-->
+        <p>Course Information: <section id="course"></section></p>
+        <!--Give section to display entered name-->
+    </div>
+    <footer>
+        <div  id="aboutCubic">
+            <h5>About Cubic Community College</h5>
+            <p>
+                Cubic College was founded in 1993 with an emphesis in computer sciences and programming. This technical college was created to assist students enter the world of programming specializing in several different languages. Real world professionals teaching courses with real world examples!
+            </p>
+        </div>
+        <div>
+            <h5>Contact Our Admissions Office</h5>
+            <ul>
+                <li><a href="mailto:ryanlanoux@gmail.com">Email us</a></li>
+                <li>Phone: (507)-999-9999</li>
+                <li>fax: 555-555-5555</li>
+                <li><a href="https://www.Google.com" target="blank">1800 Cubic street, New york NY 00001</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+    <!--This will begin the javaScript-->
+    <script type="text/javascript">
+
+        // const txt1 = document.getElementById('courseName');
+        // const searchButton = document.getElementById('searchButton');
+        // const course = document.getElementById('course');
+
+        // function class1() {
+        //     course.innerHTML = txt1.value;
+        // }
+
+        // searchButton.addEventListener('click',courseName);
+
+        var courseDiscPython = document.getElementById("currentCourse");
+        courseDiscPython.innerHTML = pythonCourse.course;
+
+        var courseDiscjavaScript = document.getElementById("currentCourse");
+        courseDiscjavaScript.innerHTML = javaScript.course;
+
+        var searchBtn = document.getElementById("searchButton");
+
+        var courseTxt = document.getElementById("courseName");
+
+        // onclick for when user clicks the button
+        searchBtn.onclick = function()
+        {
+            submitCourse(courseName.value);
+        }
+        
+        if(pythonCourse.course == 1001)
+        {
+            courseDiscPython.style.color = "Red";
+        }
+
+        if(javaScript.course == 1010)
+        {
+            courseDiscjavaScript.style.color = "blue";
+        }
+
+    </script>
+
+</body>
+</html>
