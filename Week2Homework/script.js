@@ -1,18 +1,18 @@
 // this is the javascript for index.html
 
-// const courseName = document.getElementById('courseName');
-// const searchButton = document.getElementById('searchButton');
-// const course = document.getElementById('course');
+const courseName = document.getElementById('courseName');
+const searchButton = document.getElementById('searchButton');
+const course = document.getElementById('course');
 
 // create 2 variables for the search object
-var pythonCourse = 
+const python = 
 {
     Course: 1001 ,
     Name: "python101",
     Description: "This is an entry level programming course to start your computer programming journey!" 
 }
 
-var javaScript =
+const javaScript =
 {
     Course: 1010 ,
     Name: "Javascript101" ,
@@ -26,5 +26,28 @@ function submitCourse(courseName)
 
     let output = document.getElementById("course");
     output.innerHTML = courseName;
+    
+    if(python.Course == 1001)
+    {
+        courseDiscPython.style.color = "Red";
+    }
+    else if(javaScript.Course == 1010)
+    {
+        courseDiscjavaScript.style.color = "blue";
+    }
+    else
+    {
+        "";
+    }
 
 }
+
+// if(python.Course == 1001)
+// {
+//     courseDiscPython.style.color = "Red";
+// }
+
+// if(javaScript.Course == 1010)
+// {
+//     courseDiscjavaScript.style.color = "blue";
+// }   
