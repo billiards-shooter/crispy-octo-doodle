@@ -6,7 +6,7 @@
     <title>Week Two Homework</title>
 
     <link rel="stylesheet" href="style.css" />
-    <script type="text/javascript" src="script.js"> </script>
+    <script type="text/javascript" src="script.js" defer> </script>
 
 </head>
 <body>
@@ -46,7 +46,7 @@
         <!--Will ask user to submit a course name-->
         <input type="button" value="Search" id="searchButton" />
         <!--This will add a button-->
-        <p>Course Information: <section id="course"></section></p>
+        <p>Course Information: <span id="course"></span></p>
         <!--Give section to display entered name-->
     </div>
     <footer>
@@ -70,21 +70,13 @@
     <!--This will begin the javaScript-->
     <script type="text/javascript">
 
-        // const txt1 = document.getElementById('courseName');
-        // const searchButton = document.getElementById('searchButton');
-        // const course = document.getElementById('course');
 
-        // function class1() {
-        //     course.innerHTML = txt1.value;
-        // }
 
-        // searchButton.addEventListener('click',courseName);
+        // var courseDiscPython = document.getElementById("currentCourse");
+        // courseDiscPython.innerHTML = pythonCourse.course;
 
-        var courseDiscPython = document.getElementById("currentCourse");
-        courseDiscPython.innerHTML = pythonCourse.course;
-
-        var courseDiscjavaScript = document.getElementById("currentCourse");
-        courseDiscjavaScript.innerHTML = javaScript.course;
+        // var courseDiscjavaScript = document.getElementById("currentCourse");
+        // courseDiscjavaScript.innerHTML = javaScript.course;
 
         var searchBtn = document.getElementById("searchButton");
 
@@ -96,15 +88,15 @@
             submitCourse(courseName.value);
         }
         
-        if(pythonCourse.course == 1001)
-        {
-            courseDiscPython.style.color = "Red";
-        }
+        // if(pythonCourse.course == 1001)
+        // {
+        //     courseDiscPython.style.color = "Red";
+        // }
 
-        if(javaScript.course == 1010)
-        {
-            courseDiscjavaScript.style.color = "blue";
-        }
+        // if(javaScript.course == 1010)
+        // {
+        //     courseDiscjavaScript.style.color = "blue";
+        // }
 
     </script>
 
